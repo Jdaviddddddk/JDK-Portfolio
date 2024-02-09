@@ -38,6 +38,6 @@ const tl1 = gsap.timeline({
 });
 
 tl1.to(".model", {
-  rotation: "360deg",
+  cameraOrbit: 360,
   duration: 2,
 });
