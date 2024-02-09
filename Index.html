@@ -67,7 +67,7 @@
 			class="model"
 			alt="Modelado" 
 			src="3d/Be-tha-nie.glb" 
-        	camera-orbit="0% 80% 50%"
+        	camera-orbit="calc(-1.5rad + env(window-scroll-y) * 4rad) calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y) * 10m)"
 			auto-rotate
 			auto-rotate-delay="2000"
 			camera-controls
