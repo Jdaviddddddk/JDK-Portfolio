@@ -36,3 +36,8 @@ const tl1 = gsap.timeline({
     end: "100% 0%",
   },
 });
+
+tl1.to(".model", {
+  RotateY: "90deg",
+  duration: 4,
+});
