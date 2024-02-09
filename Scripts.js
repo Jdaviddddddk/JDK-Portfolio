@@ -38,6 +38,6 @@ const tl1 = gsap.timeline({
 });
 
 tl1.to(".model", {
-  cameraOrbit: "0% 50% 20%",
+  cameraOrbit: "80% 50% 10%",
   duration: 6,
 });
