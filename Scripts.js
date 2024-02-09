@@ -33,11 +33,11 @@ const tl1 = gsap.timeline({
     pin: true,
     trigger: ".model",
     start: "0% 0%",
-    end: "100% 0%",
+    end: "130% 0%",
   },
 });
 
 tl1.to(".model", {
-  cameraOrbit: "auto auto 80%",
-  duration: 5,
+  cameraOrbit: "auto 50% 20%",
+  duration: 8,
 })
