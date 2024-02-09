@@ -39,5 +39,5 @@ const tl1 = gsap.timeline({
 
 tl1.to(".model", {
   opacity: "0%",
-  duration: 10,
+  duration: 0,
 });
