@@ -10,6 +10,7 @@ model-viewer{
     background-color: unset;
     position: relative;
     overflow: hidden;
+    transform: rotateY(0deg);
 }
 
 
