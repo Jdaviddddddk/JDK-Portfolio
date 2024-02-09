@@ -29,7 +29,7 @@ tl.to(".hidden1", {
 const tl1 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     pin: true,
     trigger: ".model",
     start: "0% 0%",
@@ -38,6 +38,6 @@ const tl1 = gsap.timeline({
 });
 
 tl1.to(".model", {
-  cameraOrbit: "0% 0% 20%",
+  cameraOrbit: "0% 50% 20%",
   duration: 5,
 })
