@@ -13,7 +13,7 @@ model-viewer{
     background-color: unset;
     position: relative;
     overflow: hidden;
-    transform: rotateY(180deg);
+    rotationY(180deg);
 }
 
 
