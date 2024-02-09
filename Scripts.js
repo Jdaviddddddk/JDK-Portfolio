@@ -25,3 +25,14 @@ tl.to(".hidden1", {
     opacity: "100%",
     duration: 4,
 });
+
+const tl1 = gsap.timeline({
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    pin: true,
+    trigger: ".model",
+    start: "0% 0%",
+    end: "100% 0%",
+  },
+});
