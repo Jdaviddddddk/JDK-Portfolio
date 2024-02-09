@@ -39,5 +39,5 @@ const tl1 = gsap.timeline({
 
 tl1.to(".model", {
   cameraOrbit: "0% 50% 20%",
-  duration: 5,
-})
+  duration: 6,
+});
