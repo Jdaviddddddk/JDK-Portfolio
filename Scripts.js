@@ -33,10 +33,11 @@ const tl1 = gsap.timeline({
     pin: true,
     trigger: ".model",
     start: "0% 0%",
-    end: "150% 0%",
+    end: "200% 0%",
   },
 });
 
 tl1.to(".model", {
-  duration: 6,
+  opacity: "0%",
+  duration: 10,
 });
