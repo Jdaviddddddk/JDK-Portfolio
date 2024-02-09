@@ -5,11 +5,10 @@ body, html {
 }
 
 model-viewer{
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    position: relative;
     width: 1920px;
     height: 1080px;
+    z-index: 1000;
 }
 
 
