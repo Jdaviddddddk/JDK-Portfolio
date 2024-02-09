@@ -38,6 +38,6 @@ const tl1 = gsap.timeline({
 });
 
 tl1.to(".model", {
-  opacity: "0%",
+  opacity: 0,
   duration: 0,
 });
