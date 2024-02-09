@@ -6,7 +6,7 @@ body, html {
 
 model-viewer{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 30%;
     width: 1920px;
     height: 1080px;
