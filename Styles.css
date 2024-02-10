@@ -109,7 +109,7 @@ h2 {
 #Abilities {
     position: relative;
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
