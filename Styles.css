@@ -271,7 +271,6 @@ header {
   }
 
   .annotation{
-    align-items: flex-start;
     width: 30vw;
     height: 20vh;
     background-color: rgba(107, 7, 77, 0.384);
