@@ -7,7 +7,7 @@ body, html {
 model-viewer{
     position: absolute;
     scale: 2;
-    top: 40%;
+    top: 10%;
     width: 100vw;
     height: 120vh;
     background-color: unset;
@@ -109,7 +109,7 @@ h2 {
 #Abilities {
     position: relative;
     position: absolute;
-    top: 38%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
