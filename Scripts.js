@@ -33,7 +33,7 @@ const tl1 = gsap.timeline({
     pin: true,
     trigger: ".model",
     start: "0% 0%",
-    end: "400% 0%",
+    end: "600% 0%",
   },
 });
 
