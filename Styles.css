@@ -48,8 +48,8 @@ model-viewer{
     width: 0;
     height: 0;
     border-left: 100px solid transparent; /* Ancho del borde diagonal */
-    border-right: 100px solid transparent; /* Ancho del borde diagonal */
-    border-bottom: 100vw solid #fff; /* Altura del borde diagonal y color */
+    border-right: 100vw solid transparent; /* Ancho del borde diagonal */
+    border-bottom: 100% solid #fff; /* Altura del borde diagonal y color */
     z-index: 1000;
 }
 
