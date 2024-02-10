@@ -43,12 +43,12 @@ model-viewer{
     position: relative;
     content: '';
     position: absolute;
-    top: 100px; /* Ajusta la posición vertical del corte */
+    top: -100px; /* Ajusta la posición vertical del corte */
     width: 100%;
-    height: 500px; /* Ajusta la altura del corte */
+    height: 200px; /* Ajusta la altura del corte */
     background-color: #e9d6d6; /* Color del corte */
-    transform: rotate(10deg); /* Ajusta el ángulo de la diagonal */
-    transform-origin: bottom left; /* Establece el punto de origen de la rotación */
+    transform: rotate(-10deg); /* Ajusta el ángulo de la diagonal */
+    transform-origin: top left; /* Establece el punto de origen de la rotación */
     z-index: 1000;
 }
 
