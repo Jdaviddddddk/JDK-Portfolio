@@ -276,7 +276,7 @@ header {
     height: 20vh;
     background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semi-transparente */
     border-radius: 10px; /* Bordes redondeados */
-    backdrop-filter: blur(10px); /* Desenfoque del fondo */
+    backdrop-filter: blur(30px); /* Desenfoque del fondo */
     opacity: 0.9; /* Opacidad del contenedor */
     overflow: hidden; /* Evita que el contenido se desborde */
     position: relative; /* Para posicionar los elementos internos */
@@ -290,6 +290,8 @@ header {
     transform: translate(-50%, -50%); /* Centrar */
     color: white; /* Color de texto */
     text-align: center; /* Alinear texto al centro */
+    font-size: 50px;
+    font-family: 'Moulpali', sans-serif;
   }
 
   :not(:defined) > * {
