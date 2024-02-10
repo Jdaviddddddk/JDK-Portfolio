@@ -38,7 +38,5 @@ const tl1 = gsap.timeline({
 });
 
 tl1.from(".model", {
-  scale: 0,
-  borderRadius: "100px",
   duration: 6,
 });
