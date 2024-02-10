@@ -9,7 +9,7 @@ model-viewer{
     scale: 2;
     top: 40%;
     width: 100vw;
-    height: 300vh;
+    height: 200vh;
     background-color: unset;
     position: relative;
     overflow: hidden;
