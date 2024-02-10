@@ -62,13 +62,14 @@ model-viewer{
     position: relative;
     position: absolute;
     top: 0;
-    height: 600%;
+    height: 1000vh;
     width: 98.7vw;
     margin: 0;
     padding: 0;
     background-color: black;
     z-index: -1;
     border-bottom-right-radius: 250px;
+    overflow: hidden;
 }
 
 #LineB {
