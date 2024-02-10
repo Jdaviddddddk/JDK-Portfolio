@@ -62,7 +62,7 @@ model-viewer{
     position: relative;
     position: absolute;
     top: 0;
-    height: 1000vh;
+    height: 1000%;
     width: 98.7vw;
     margin: 0;
     padding: 0;
