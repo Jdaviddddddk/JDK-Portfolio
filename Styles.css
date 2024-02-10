@@ -275,7 +275,7 @@ model-viewer {
 
   .hotspot[slot="hotspot-head"]{
     --min-hotspot-opacity: 0;
-    background-color: red;
+    background-color: transparent;
   }
 
   .hotspot[slot="hotspot-hand"]{
@@ -289,7 +289,8 @@ model-viewer {
   }
 
   .annotation{
-    background-color: #888888;
+    background-color: rgba(87, 194, 243, 0.384);
+    backdrop-filter: blur(10px);
     position: absolute;
     transform: translate(10px, 10px);
     border-radius: 10px;
