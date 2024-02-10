@@ -11,7 +11,7 @@ const tl = gsap.timeline({
     pin: true,
     trigger: ".fixedPort",
     start: "0% 0%",
-    end: "120% 0%",
+    end: "140% 0%",
   },
 });
 
