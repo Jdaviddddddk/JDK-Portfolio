@@ -18,7 +18,7 @@ model-viewer{
 
 #General {
     width: 100%;
-    height: 1500vh;
+    height: 2000vh;
     overflow: hidden;
 }
 
@@ -289,14 +289,16 @@ header {
   }
 
   .annotation{
-    width: 40vw;
-    height: 10vh;
+    align-items: flex-start;
+    width: 30vw;
+    height: 20vh;
     background-color: rgba(87, 194, 243, 0.384);
     backdrop-filter: blur(10px);
     position: absolute;
     transform: translate(10px, 10px);
     border-radius: 10px;
     padding: 10px;
+    overflow: hidden;
   }
 
   :not(:defined) > * {
