@@ -45,9 +45,9 @@ model-viewer{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: transparent;
     transform-origin: top left;
     transform: skewY(-10deg);
     z-index: 1000;
