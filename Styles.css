@@ -4,14 +4,18 @@ body, html {
     box-sizing: border-box;
 }
 
-model-viewer {
-    position: relative;
+model-viewer{
+    position: absolute;
+    scale: 2;
+    top: 12%;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-color: unset;
+    position: relative;
     overflow: hidden;
     border-radius: 0px;
 }
+
 
 #General {
     width: 100%;
@@ -19,68 +23,100 @@ model-viewer {
     overflow: hidden;
 }
 
-.fixedPort {
+.fixedPort{
     position: relative;
     width: 100%;
     height: 100vh;
     background: linear-gradient(#9400D3, #000);
-    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 300px;
 }
 
 #CircleCont {
     position: absolute;
     top: 50%;
     right: 15%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     border-radius: 50%;
     overflow: hidden;
-    width: 30%;
-    padding-top: 30%;
+    width: 28vw;
+    height: 28vw;
 }
 
 #CircleCont img {
-    width: 100%;
-    height: auto;
+    width: 130%;
+    height: 130%;
     object-fit: cover;
+}
+
+#CircleCont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
 }
 
 #SlideB {
     position: relative;
+    position: absolute;
+    top: 0;
     height: 2000vh;
-    width: 100%;
+    width: 98.7vw;
     margin: 0;
     padding: 0;
     background-color: black;
     z-index: -1;
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 250px;
     overflow: hidden;
 }
 
+#LineB {
+    width: 40%;
+    height: 1.5%;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+}
+
+#LineW {
+    position: absolute;
+    right: 0;
+    top: 28.9%;
+    width: 66.5%;
+    height: 0.7%;
+    background-color: white;
+    z-index: 2;
+}
+
 h2 {
-    font-size: 6vw;
+    font-size: 55px;
     font-family: 'Jockey One', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #Aboutme {
     position: absolute;
     top: 21%;
-    left: 50%;
+    left: 32.3%;
     transform: translate(-50%, -50%);
     z-index: 3;
     color: black;
-    font-size: 4vw;
 }
 
 #dcrp {
     position: absolute;
     top: 65%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
     z-index: 3;
     color: white;
-    font-size: 1.5vw;
+    font-size: 18px;
     font-family: 'Jockey One', sans-serif;
+    letter-spacing: 1px;
 }
 
 #List1 {
@@ -88,7 +124,7 @@ h2 {
     padding: 0;
     position: absolute;
     top: 42%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
 
@@ -99,7 +135,19 @@ h2 {
     font-family: 'Moulpali', sans-serif;
     white-space: nowrap;
     color: white;
-    font-size: 1.5vw;
+    font-size: 21px;
+}
+
+#List1 .circle {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: -10%;
 }
 
 header {
@@ -148,7 +196,7 @@ header {
 .prt {
     position: relative;
     z-index: 3;
-    font-size: 6vw;
+    font-size: 20vw;
     font-family: 'Jockey One', sans-serif;
     color: black;
     text-align: center;
@@ -159,56 +207,60 @@ header {
     margin: 0;
 }
 
-.hotspot {
+:not(:defined) > * {
+  display: none;
+}
+
+.hotspot{
     display: block;
-    width: 2%;
-    height: 2%;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
     background-color: blue;
     box-sizing: border-box;
     pointer-events: none;
     cursor: pointer;
-    position: absolute;
-    z-index: 2;
-}
+  }
 
-.hotspot[slot="hotspot-head"] {
+  .hotspot[slot="hotspot-head"]{
     --min-hotspot-opacity: 0;
     background-color: transparent;
-}
+  }
 
-.hotspot[slot="hotspot-hand"] {
+  .hotspot[slot="hotspot-hand"]{
     --min-hotspot-opacity: 0;
     background-color: transparent;
-}
+  }
 
-.hotspot[slot="hotspot-arm"] {
+  .hotspot[slot="hotspot-arm"]{
     background-color: transparent;
-}
+  }
 
-.annotation {
-    width: 30%;
-    height: 20%;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(3px);
-    opacity: 0.9;
+  .annotation{
+    width: 30vw;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    backdrop-filter: blur(30px); /* Desenfoque del fondo */
+    opacity: 0.9; /* Opacidad del contenedor */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    position: relative; /* Para posicionar los elementos internos */
     overflow: hidden;
-    position: relative;
-}
+  }
 
-.annotationContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 1.5vw;
+  .annotationContent{
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar */
+    color: white; /* Color de texto */
+    text-align: center; /* Alinear texto al centro */
+    font-size: 30px;
     font-family: 'Moulpali', sans-serif;
     white-space: nowrap;
-}
+  }
 
-:not(:defined) > * {
+  :not(:defined) > * {
     display: none;
-}
+  }
