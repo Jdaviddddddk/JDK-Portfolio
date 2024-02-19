@@ -17,7 +17,7 @@ const tl = gsap.timeline({
 
 tl.to(tPort, {
     scale: 0.5,
-    y: -200,
+    y: "-12.5em",
     duration: 4,
 });
 
