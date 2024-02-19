@@ -3,10 +3,10 @@ gsap.registerPlugin(ScrollTrigger);
 //DECLARADOR DE VARIABLES
 const tPort = document.querySelector(".prt");
 const ePort = document.querySelector(".hidden1");
-const brandBtn = document.querySelector("#brandBtn");
+/*const brandBtn = document.querySelector("#brandBtn");
 const ilustrationBtn = document.querySelector("#ilustrationBtn");
 const modelingBtn = document.querySelector("modelingBtn");
-const content = document.querySelector("sliderCont");
+const content = document.querySelector("sliderCont");*/
 
 const tl = gsap.timeline({
   scrollTrigger: {
