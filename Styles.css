@@ -238,6 +238,7 @@ header {
   }
 
   .annotation{
+    width: 10vw;
     height: 5vh;
     background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semi-transparente */
     border-radius: 0.625em; /* Bordes redondeados */
