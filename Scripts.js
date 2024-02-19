@@ -19,12 +19,6 @@ const tl = gsap.timeline({
   },
 });
 
-brandBtn.addEventListener('click', function() {
-  content.opacity = 0.9;
-  content.content = #cont1;
-  duration = 4;
-});
-
 tl.to(tPort, {
     scale: 0.5,
     y: -200,
@@ -39,7 +33,7 @@ tl.to(".hidden1", {
 const tl1 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     pin: true,
     trigger: ".model",
     start: "0% 0%",
@@ -49,4 +43,10 @@ const tl1 = gsap.timeline({
 
 tl1.from(".model", {
   duration: 6,
+});
+
+brandBtn.addEventListener('click', function() {
+  content.opacity = 0.9;
+  content.content = #cont1;
+  duration = 4;
 });
