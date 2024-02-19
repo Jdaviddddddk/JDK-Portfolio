@@ -45,8 +45,8 @@ tl1.from(".model", {
   duration: 6,
 });
 
-brandBtn.addEventListener('click', function() {
+/*brandBtn.addEventListener('click', function() {
   content.opacity = 0.9;
   content.content = #cont1;
   duration = 4;
-});
+});*/
