@@ -268,7 +268,7 @@ header {
     height: 30vh;
     background-color: rgba(104, 9, 99, 0.1);
     backdrop-filter: blur(30px);
-    opacity: 0.9;
+    opacity: 0;
     border-radius: 10em;
     position: absolute;
     top: 12%;
