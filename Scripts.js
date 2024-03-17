@@ -54,5 +54,5 @@ const tl2 = gsap.timeline({
 
 tl2.to("#contImg", {
   y: -100,
-  duration: 6,
+  duration: 10,
 })
