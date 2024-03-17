@@ -16,7 +16,7 @@ model-viewer{
     border-radius: 0;
 }
 
-#contenedorDiagonal{
+#contenedorDiagonal img{
     position: absolute;
     width: 100vw;
     height: 100vh;
