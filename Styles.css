@@ -7,7 +7,6 @@ body, html {
 
 model-viewer{
     scale: 2;
-    top: 12%;
     width: 100vw;
     height: 120vh;
     background-color: unset;
