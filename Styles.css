@@ -2,10 +2,10 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
 }
 
 model-viewer{
-    position: absolute;
     scale: 2;
     top: 12%;
     width: 100vw;
@@ -22,7 +22,6 @@ model-viewer{
 }
 
 #contenedorDiagonal img{
-    position: absolute;
     width: 100vw;
     height: 200vh;
 }
@@ -67,20 +66,6 @@ model-viewer{
     height: 100%;
     background-color: black;
     opacity: 0.5;
-}
-
-#SlideB {
-    position: relative;
-    position: absolute;
-    top: 0;
-    height: 2000vh;
-    width: 98.7vw;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    z-index: -1;
-    border-bottom-right-radius: 15.625em;
-    overflow: hidden;
 }
 
 #LineB {
