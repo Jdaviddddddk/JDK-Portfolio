@@ -47,12 +47,12 @@ const tl2 = gsap.timeline({
     markers: true,
     pin: true,
     trigger: "#contenedorDiagonal",
-    start: "0% 50%",
-    end: "0% 0%",
+    start: "-50% 50%",
+    end: "-50% 0%",
   },
 });
 
 tl2.to("#contImg", {
-  y: -100,
+  y: -1000,
   duration: 20,
 })
