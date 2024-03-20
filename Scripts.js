@@ -44,7 +44,7 @@ tl1.from(".model", {
 const tl2 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    //markers: true,
+    markers: true,
     pin: true,
     trigger: "#contenedorDiagonal",
     start: "-50% 50%",
