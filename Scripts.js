@@ -53,6 +53,6 @@ const tl2 = gsap.timeline({
 });
 
 tl2.to("#contImg", {
-  y: -1000,
+  y: "-80vh",
   duration: 20,
 })
