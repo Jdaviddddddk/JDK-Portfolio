@@ -47,8 +47,8 @@ const tl2 = gsap.timeline({
     markers: true,
     pin: true,
     trigger: "#contenedorDiagonal",
-    start: "20% 0%",
-    end: "100% 0%",
+    start: "0% 50%",
+    end: "0% 0%",
   },
 });
 
