@@ -42,13 +42,15 @@ tl1.from(".model",{
 });
 
 tl1.from(".tresdeSplit",{
+  opacity: "0%",
   x: -500,
   duration: 10,
 });
 
 tl1.from(".modelingSplit",{
+  opacity: "0%",
   x: 500,
-  duration: 10,
+  duration: 20,
 });
 
 const tl2 = gsap.timeline({
