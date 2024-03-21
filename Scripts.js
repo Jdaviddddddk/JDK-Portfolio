@@ -42,8 +42,13 @@ tl1.from(".model",{
 });
 
 tl1.from(".tresdeSplit",{
-  x: -100,
-  duration: 1,
+  x: -500,
+  duration: 10,
+});
+
+tl1.from(".modelingSplit",{
+  x: 500,
+  duration: 10,
 });
 
 const tl2 = gsap.timeline({
