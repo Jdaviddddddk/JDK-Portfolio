@@ -48,7 +48,7 @@ tl1.from(".tresdeSplit",{
 });
 
 tl1.from(".modelingSplit",{
-  opacity: "0%",
+  //opacity: "0%",
   x: 500,
   duration: 20,
 });
