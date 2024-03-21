@@ -17,13 +17,13 @@ model-viewer{
 
 .modelingSplit{
     position: absolute;
-    left: 20%;
+    right: 20%;
 }
 
 .tresdeSplit{
     margin-top: 10%;
     position: absolute;
-    right: 10%;
+    left: 10%;
 }
 
 #contenedorDiagonal{
