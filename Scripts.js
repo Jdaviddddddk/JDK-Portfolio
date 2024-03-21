@@ -37,7 +37,7 @@ const tl1 = gsap.timeline({
   },
 });
 
-tl1.from(".model", {
+tl1.from(".model", ".Modeling++",{
   duration: 6,
 });
 

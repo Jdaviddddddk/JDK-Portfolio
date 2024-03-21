@@ -15,9 +15,15 @@ model-viewer{
     border-radius: 0;
 }
 
-#Modeling{
-    color: white;
-    text-align: center;
+.modelingSplit{
+    position: absolute;
+    left: 20%;
+}
+
+.tresdeSplit{
+    margin-top: 10%;
+    position: absolute;
+    right: 10%;
 }
 
 #contenedorDiagonal{
@@ -95,6 +101,12 @@ h2 {
     font-size: 3.438em;
     font-family: 'Jockey One', sans-serif;
     letter-spacing: 0.125em;
+}
+
+.Modeling{
+    color: white;
+    text-align: center;
+    font-size: 8em;
 }
 
 #Aboutme {
