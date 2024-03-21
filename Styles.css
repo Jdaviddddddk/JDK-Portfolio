@@ -16,12 +16,14 @@ model-viewer{
 }
 
 .modelingSplit{
+    opacity: 100%;
     margin-top: 10%;
     position: absolute;
     right: 10%;
 }
 
 .tresdeSplit{
+    opacity: 80%;
     position: absolute;
     left: 30%;
 }
