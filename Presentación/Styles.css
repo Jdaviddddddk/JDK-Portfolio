@@ -1,0 +1,282 @@
+html, body{
+    margin: 10px;
+    padding: 0;
+    background-color: #000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    z-index: -11;
+}
+
+#generalCont{
+    height: 93vh;
+    position: relative;
+    background: linear-gradient(#9400D3, #15001f);
+    border-bottom-left-radius: 20vh;
+    text-align: center;
+    overflow: hidden;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+#encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 0px;
+    font-family: 'Jockey One', Regular;
+}
+
+#jdavidk{
+    scale: 1.2;
+    color: black;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -1.5rem;
+}
+
+#blackLine{
+    position: relative;
+    opacity: 1;
+    border-radius: 10vh;
+    z-index: 10;
+    width: 30vw;
+    height: 1.5vh;
+}
+
+#aboutList{
+    position: relative;
+    position: absolute;
+    font-family: 'Moulpali', Regular;
+    color: white;
+    z-index: 1;
+    margin-left: -6vw;
+}
+
+#foto {
+    position: relative;
+    max-width: 15vw;
+    max-height: 15vw;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -2;
+    margin-right: -6vw;
+}
+
+#lists{
+    position: absolute;
+    bottom: 6%;
+    left: -2%;
+    right: -2%;
+}
+
+#abilitiesList h1{
+    position: relative;
+    z-index: -1;
+    color: white;
+}
+
+#abilitiesList ul li{
+    position: relative;
+    left: -24%;
+    z-index: -1;
+    list-style: none;
+    color: white;
+    font-family: 'Moulpali', Regular;
+}
+
+#softwaresList h1{
+    position: relative;
+    z-index: -1;
+    color: white;
+}
+
+#softwaresList ul li{
+    position: relative;
+    z-index: -1;
+    list-style: none;
+    color: white;
+    font-family: 'Moulpali', Regular;
+}
+
+#galeria{
+    position: absolute;
+    bottom: -18%;
+}
+
+#galeria img{
+    position: relative;
+    max-width: 70%;
+    max-height: auto;
+    min-width: 50%;
+    min-height: auto;
+    transition: 1s;
+    z-index: 1;
+}
+
+#iconList{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    z-index: 10;
+}
+
+#iconList img{
+    position: relative;
+    z-index: 1001;
+    width: 3vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 1vh;
+    transition: 0.5s;
+}
+
+#iconLine{
+    position: relative;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 4vh;
+    opacity: 1;
+    margin-top: -0.5vh;
+}
+
+/* amin */
+
+#iconList img:hover{
+    width: 4vh;
+}
+
+#galeria img:hover{
+    max-width: 88%;
+    max-height: auto;
+    min-width: 30vw;
+    min-height: auto;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+#divCursor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Moulpali', Regular;
+    font-size: 1em;
+    position: absolute;
+    background-color: #fcffff;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s, ease-in-out;
+}
+
+/*Responsive*/
+
+@media (min-width: 0px) and (max-width: 424px) {
+    #generalCont{
+        width: 95vw;
+        border-bottom-left-radius: 15vh;
+    }
+
+    #aboutList{
+        margin-left: -17vw;
+    }
+    
+    #foto {
+        margin-right: -15vw;
+        max-width: 30vw;
+        max-height: 30vw;
+    }
+
+    #lists{
+        bottom: 27%;
+        left: 0;
+        right: 0;
+    }
+
+    #galeria{
+        bottom: -100%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 576px) {
+    #generalCont{
+        width: 90vw;
+        border-bottom-left-radius: 15vh;
+    }
+
+    #foto{
+        margin-right: -15vw;
+        max-width: 28vw;
+        max-height: 28vw;
+    }
+
+    #aboutList{
+        margin-left: -15vw;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #generalCont{
+        width: 65vw;
+        border-bottom-left-radius: 15vh;
+    }
+
+    #foto{
+        max-width: 27vw;
+        max-height: 27vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 962px) {
+    #generalCont{
+        width: 50vw;
+        border-bottom-left-radius: 15vh;
+    }
+
+    #foto{
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+
+}
+
+@media (min-width: 963px) and (max-width: 1100px) {
+    #generalCont{
+        width: 45vw;
+    }
+
+    #foto{
+        max-width: 18vw;
+        max-height: 18vw;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px){
+    #generalCont{
+        width: 40vw;
+    }
+
+    #foto{
+        max-width: 17vw;
+        max-height: 17vw;
+    }
+}
+
+@media (min-width: 1201px){
+    #generalCont{
+        width: 40vw;
+    }
+
+    #foto{
+        max-width: 14vw;
+        max-height: 14vw;
+    }
+}
