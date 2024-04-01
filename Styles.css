@@ -5,6 +5,55 @@ body, html {
     background-color: #000;
 }
 
+h2 {
+    font-size: 3.438em;
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.125em;
+}
+
+header {
+    position: fixed;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    color: white;
+    top: 0;
+    z-index: 1000;
+}
+
+/*Menú*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LogoH {
+    float: left;
+    margin-right: 0;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.LogoH img {
+    width: 40%;
+    height: auto;
+}
+
+.Burguer {
+    cursor: pointer;
+}
+
+.Burguer img {
+    width: 70%;
+    height: auto;
+}
+
+/*Modelado*/
+
 model-viewer{
     scale: 2;
     width: 100vw;
@@ -28,12 +77,14 @@ model-viewer{
     left: 30%;
 }
 
-#contenedorDiagonal{
-    width: 100vw;
-    height: 200vh;
+#evrFrame{
+    z-index: 5;
+    opacity: 0.1;
 }
 
-#contenedorDiagonal img{
+#contenedorDiagonal{
+    position: relative;
+    z-index: 4;
     width: 100vw;
     height: 200vh;
 }
@@ -43,6 +94,21 @@ model-viewer{
     height: 2000vh;
     overflow: hidden;
 }
+
+.Modeling{
+    color: white;
+    text-align: center;
+    font-size: 8em;
+}
+
+#scrolHere{
+    width: 10vw;
+    height: 20vh;
+    background-color: black;
+    z-index: 6;
+}
+
+/*Info General*/
 
 .fixedPort{
     position: relative;
@@ -87,28 +153,6 @@ model-viewer{
     position: absolute;
     top: 30%;
     z-index: 2;
-}
-
-#LineW {
-    position: absolute;
-    right: 0;
-    top: 28.9%;
-    width: 66.5%;
-    height: 0.7%;
-    background-color: white;
-    z-index: 2;
-}
-
-h2 {
-    font-size: 3.438em;
-    font-family: 'Jockey One', sans-serif;
-    letter-spacing: 0.125em;
-}
-
-.Modeling{
-    color: white;
-    text-align: center;
-    font-size: 8em;
 }
 
 #Aboutme {
@@ -163,45 +207,6 @@ h2 {
     margin-left: -10%;
 }
 
-header {
-    position: fixed;
-    background-color: transparent;
-    color: white;
-    width: 100%;
-    padding: 0;
-    z-index: 1;
-    color: white;
-    top: 0;
-    z-index: 1000;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.LogoH {
-    float: left;
-    margin-right: 0;
-    margin-left: 2%;
-    margin-top: 1%;
-}
-
-.LogoH img {
-    width: 40%;
-    height: auto;
-}
-
-.Burguer {
-    cursor: pointer;
-}
-
-.Burguer img {
-    width: 70%;
-    height: auto;
-}
-
 .hidden1 {
     opacity: 0%;
 }
@@ -224,59 +229,7 @@ header {
   display: none;
 }
 
-.hotspot{
-    display: block;
-    width: 1.25em;
-    height: 1.25em;
-    border-radius: 0.625em;
-    border: none;
-    background-color: blue;
-    box-sizing: border-box;
-    pointer-events: none;
-    cursor: pointer;
-  }
-
-  .hotspot[slot="hotspot-head"]{
-    --min-hotspot-opacity: 0;
-    background-color: transparent;
-  }
-
-  .hotspot[slot="hotspot-hand"]{
-    --min-hotspot-opacity: 0;
-    background-color: transparent;
-  }
-
-  .hotspot[slot="hotspot-arm"]{
-    background-color: transparent;
-  }
-
-  .annotation{
-    width: 10vw;
-    height: 5vh;
-    background-color: rgba(255, 255, 255, 0.1); /* Color de fondo semi-transparente */
-    border-radius: 0.625em; /* Bordes redondeados */
-    backdrop-filter: blur(30px); /* Desenfoque del fondo */
-    opacity: 0.9; /* Opacidad del contenedor */
-    overflow: hidden; /* Evita que el contenido se desborde */
-    position: relative; /* Para posicionar los elementos internos */
-    overflow: hidden;
-    display: inline-block;
-    padding: 10px;
-  }
-
-  .annotationContent{
-    position: absolute; /* Posicionamiento absoluto */
-    top: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Centrar */
-    color: white; /* Color de texto */
-    text-align: center; /* Alinear texto al centro */
-    font-size: 1.875rem;
-    font-family: 'Moulpali', sans-serif;
-    white-space: nowrap;
-  }
-
-  #sliderCont{
+#sliderCont{
     width: 30vw;
     height: 30vh;
     background-color: rgba(104, 9, 99, 0.1);
@@ -287,8 +240,8 @@ header {
     top: 12%;
     left: 5%;
     display: flex;
-  }
+}
 
-  :not(:defined) > * {
+:not(:defined) > * {
     display: none;
   }

@@ -33,7 +33,7 @@ const tl1 = gsap.timeline({
     pin: true,
     trigger: ".model",
     start: "0% 0%",
-    end: "600% 0%",
+    end: "550% 0%",
   },
 });
 
@@ -56,7 +56,7 @@ tl1.from(".modelingSplit",{
 const tl2 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     pin: true,
     trigger: "#contenedorDiagonal",
     start: "-50% 50%",
@@ -64,7 +64,33 @@ const tl2 = gsap.timeline({
   },
 });
 
-tl2.to("#contImg", {
+tl2.to("#evrFrame", {
   y: "-150vh",
+  opacity: 1,
   duration: 20,
-})
+});
+
+tl2.to("#scrolHere", {
+  y: "-150vh",
+  opacity: 1,
+  duration: 20,
+});
+
+const tl3 = gsap.timeline({
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    pin: true,
+    trigger: "#contenedorDiagonal",
+    start: "-74.5% 0%",
+    end: "0% 0%",
+  },
+});
+
+tl3.from("#evrFrame",{
+  duration: 6,
+});
+
+tl3.from("#scrolHere", {
+  duration: 6,
+});
