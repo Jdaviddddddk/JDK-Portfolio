@@ -102,10 +102,22 @@ model-viewer{
 }
 
 #scrolHere{
-    width: 10vw;
+    position: absolute;
+    display: grid;
+    width: 10vh;
     height: 20vh;
-    background-color: black;
-    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    top: 40vh;
+    right: 10vw;
+    border-radius: 5vh;
+    align-content: center;
+}
+
+#scrolHere h1{
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    color: white;
 }
 
 /*Info General*/
