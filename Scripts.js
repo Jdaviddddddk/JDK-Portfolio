@@ -70,12 +70,6 @@ tl2.to("#evrFrame", {
   duration: 20,
 });
 
-tl2.to("#scrolHere", {
-  y: "-150vh",
-  opacity: 1,
-  duration: 20,
-});
-
 const tl3 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
@@ -88,9 +82,5 @@ const tl3 = gsap.timeline({
 });
 
 tl3.from("#evrFrame",{
-  duration: 6,
-});
-
-tl3.from("#scrolHere", {
   duration: 6,
 });
