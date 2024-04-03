@@ -79,7 +79,7 @@ tl2.to("#scrolHere", {
 const tl3 = gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    //markers: true,
     pin: true,
     trigger: "#contenedorDiagonal",
     start: "-74.5% 0%",

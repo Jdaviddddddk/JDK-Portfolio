@@ -54,7 +54,7 @@ header {
 
 /*Modelado*/
 
-model-viewer{
+.model{
     scale: 2;
     width: 100vw;
     height: 120vh;
